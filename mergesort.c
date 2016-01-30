@@ -21,7 +21,8 @@ void merge(int *arr, int *one, int *two, int size1, int size2) {
 
 void mergesort(int *list, int size) {
   int mid = size/2;
-	if (mid != 0) {
+
+  if (mid != 0) {
     int *left = malloc(sizeof(int)*mid); //O(n/2) = O(n)
     int *right = malloc(sizeof(int)*(size-mid)); // O(n/2) = O(n))
 
