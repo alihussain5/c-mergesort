@@ -35,7 +35,7 @@ void mergesort(int *list, int size) {
     } // O(n/2) = O(n)
   
   
-  	mergesort(left,mid); 
+    mergesort(left,mid); 
     mergesort(right,size-mid); 
     merge(list,left,right,mid, size-mid); // O(n)
   
